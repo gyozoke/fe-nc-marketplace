@@ -47,7 +47,7 @@ export default function SellItem() {
   }
 
   if (itemAdded === true) {
-    setItemAdded(false);
+    // setItemAdded(false);
     alert("Item added");
   }
 
