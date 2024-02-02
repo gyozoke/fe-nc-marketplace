@@ -5,7 +5,7 @@
   text-align: center;
 }
 
-.logo {
+/* .logo {
   height: 6em;
   padding: 1.5em;
   will-change: filter;
@@ -16,7 +16,7 @@
 }
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
-}
+} */
 
 @keyframes logo-spin {
   from {
@@ -39,4 +39,54 @@
 
 .read-the-docs {
   color: #888;
+}
+
+.newitemform {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  text-align: left;
+}
+
+.itemsubmitbutton {
+  margin-top: 12px;
+  width: 100%;
+}
+
+.itemcard {
+  background-color: gray;
+  margin: 18px;
+  color: black;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+
+.itemcard h2 {
+  margin-top: 8px;;
+}
+
+.itemcard h3 {
+  margin-top: 8px;;
+}
+
+.itemcard h4 {
+  margin-top: 8px;;
+}
+
+.itemcard img {
+  width: 50%;
+  height: 50%;
+  margin-bottom: 8px;
+  
+}
+
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
 }

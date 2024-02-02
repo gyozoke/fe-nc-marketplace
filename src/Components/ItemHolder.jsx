@@ -30,19 +30,20 @@ function ItemHolder(props) {
   }
 
   return (
-    <section key="items">
-      <button key="button1" onClick={handleClick}>
-        ELECTRONICS
-      </button>
-      <button key="button2" onClick={handleClick}>
-        HOUSEHOLD
-      </button>
-      <button key="button3" onClick={handleClick}>
-        CLOTHING
-      </button>
+    <section key="items" >
+        <button key="button1" onClick={handleClick}>
+          ELECTRONICS
+        </button>
+        <button key="button2" onClick={handleClick}>
+          HOUSEHOLD
+        </button>
+        <button key="button3" onClick={handleClick}>
+          CLOTHING
+        </button>
+        <main className="main">
       {items.map((item) => {
         return (
-          <div key={item.item_id}>
+          <div className="itemcard" key={item.item_id}>
             <h2 key="item-name">{item.item_name}</h2>
             <h3 key="item-description">{item.description}</h3>
             <h4 key="item-price">{item.price}</h4>
@@ -54,6 +55,7 @@ function ItemHolder(props) {
           </div>
         );
       })}
+      </main>
     </section>
   );
 }
